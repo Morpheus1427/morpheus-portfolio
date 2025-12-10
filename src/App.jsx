@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import MineImage from './assets/Mine.jpeg';
 import { Moon, Sun, Mail, Github, Linkedin, Download, Menu, X, Code, Shield, Award, CheckCircle, Send, Loader, Instagram } from 'lucide-react';
 import './App.css';
 
@@ -272,10 +273,7 @@ const MorpheusPortfolio = () => {
                 <div className="profile-container">
                   <div className="profile-wrapper">
                     <div className="profile-image">
-                      <img 
-                        src="/Mine.jpeg" 
-                        alt="Michael A. Mohamed"
-                      />
+                      <img src={MineImage} alt="Michael A. Mohamed" />
                     </div>
                     <div className="profile-badge">
                       <Shield size={24} />

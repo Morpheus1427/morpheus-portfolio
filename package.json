@@ -1,9 +1,13 @@
-{
-  "name": "my-portfolio",
+{ 
+  
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://Morpheus1427.github.io/morpheus-portfolio",
+  "name": "my-portfolio",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -11,6 +15,7 @@
   },
   "dependencies": {
     "framer-motion": "^12.23.25",
+    "gh-pages": "^6.3.0",
     "lucide-react": "^0.556.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
